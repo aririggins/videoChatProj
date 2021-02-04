@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Agora Video Chat</title>
+        <link rel="stylesheet" href="logStyles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body id ="container">
+        <div id ="flexContainer">
+            <div id="left-pane">
+                <img id="illustration" src="assets/Video_Conf.svg"/>
+                <span id="bottomText">Chat with your <strong>closet friends</strong> no <br/>matter how far they are</span>
+            </div>
+            <div class="right-pane">
+                <div class="loginContainer">
+                    <span id="sideText">Login and enjoy <span id ="highlighted">unlimited</span> <br/>video calling</span>
+                    <br/>
+                    <form>
+                    <input type="text" id="email"/>
+                    <br/>
+                    <input type="password" id="password"/>
+                    <button id ="button" class="submitButton" type = "submit" onclick = "location.href = 'https://aririggins.github.io/index'">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            function logIn() {
+                location.replace("https://google.com");
+                console.log("logged on");
+            }
+            function validate(){
+                let email = document.getElementById("email").value; 
+                let password = document.getElementById("password").value;
+                console.log(email);
+
+                if(email.match(/\S+@\S+/)){
+                    email.className = "";
+
+                    if(password.length >= 8){
+                        password.className = ""
+                        console.log("true");
+                        location.replace("https://aririggins.github.io/index");
+                    }
+                    else {
+                        console.log("pass too small");
+                        password.className = "incorrect"
+                        return false;
+                    }
+                }
+                
+                else { 
+                    mail.className = "incorrect";
+                    return false;
+                }
+            }
+
+        </script>
+    </body>
+</html>
