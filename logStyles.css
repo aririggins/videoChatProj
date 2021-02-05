@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fraunces', serif;
+}
+
+#container{
+    background-color: #b3b300;
+}
+
+.right-pane{
+    background-color: white;
+    width: 50vw;
+    height: 100vh;
+    
+}
+
+.loginContainer{
+    margin-top: 40%;
+    margin-left: 20%;
+    margin-right: 15%; 
+}
+
+#sideText{
+    font-size: 1.5rem;
+} 
+
+#highlighted{
+    color:#b3b300;
+}
+
+#email{
+    margin-top: 40px;
+}
+
+input{
+    margin-top: 10px;
+    width: 90%;
+    font-size: 1.25rem;
+    border: 2px solid #b3b300;
+    border-radius: 5px;
+}
+
+.submitButton{
+    background-color: #b3b300;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    font-family: 'Fraunces', serif;
+}
+
+#flexContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+#left-pane{
+    flex: 1;
+    text-align: center;
+    margin-top: 26%;
+}
+
+#bottomText{
+    margin-top: 40px;
+    font-size: 1.75rem;
+    color: white;
+}
+
+#incorrect {
+    border: 2px, solid, red;
+}
